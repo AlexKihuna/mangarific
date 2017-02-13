@@ -1,0 +1,32 @@
+{
+  "websites": [
+    {
+      "website": "http://goodmanga.net",
+      "mangas": [
+        {
+          "manga-title": "Naruto",
+          "latest-chapter": "400",
+          "last-read-chapter": "400",
+          "chapter-list": ["1","2","3"]
+        },
+        {
+          "manga-title": "Bleach",
+          "latest-chapter": "10000",
+          "last-read-chapter": "345",
+          "chapter-list": ["1","2","3"]
+        }
+      ]
+    }
+  ]
+}
+
+var manga = {
+  "chapterUrlPrefix": "http://goodmanga.net/Naruto/chapter/",
+  "mangaHomeUrl": "http://goodmanga.net/3/Naruto",
+  "mangaTitle": "Naruto",
+  "latestChapter": "400",
+  "lastReadChapter": "400",
+  "chapterList": ["1","2","3"],
+  "lastCheckedOn": new Date(),
+  "lastUpdatedOn": new Date()
+}

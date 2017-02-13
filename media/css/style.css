@@ -1,0 +1,92 @@
+#wrapper {
+  width: 500px;
+  background-color: #000;
+  color: #fff;
+  font-size: 90%;
+  padding: 0 0.5em;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.manga .detail-label {
+  text-align: right;
+}
+
+.manga .detail-value {
+  text-align: left;
+}
+
+.manga .detail-value, .manga .detail-label {
+  width: 50%;
+  float: left;
+  border: 1px #fff solid;
+  padding: 0 0.5em;
+}
+
+.manga .detail-value::after {
+  clear: both;
+}
+
+.manga select {
+  font-weight: bold;
+}
+
+.manga {
+  font-size: 80%;
+  position: relative;
+  padding: 0.3em 1em;
+  border-bottom: 1px #333 solid;
+}
+
+.manga-meta, .chapter-nav {
+  float: left;
+  padding: 0 0.5em;
+}
+
+.manga-meta {
+  width: 75%;
+}
+
+.chapter-nav {
+  width: 25%;
+}
+
+.actions {
+  position: absolute;
+  top: 0.3em;
+  right: 0;
+}
+
+.actions i {
+  padding: 0.3em 0.5em;
+}
+
+.clearfix {
+  line-height: 1;
+  clear: both;
+  display: block;
+}
+
+a, a:visited {
+  color: #fff;
+}
+
+.manga-title a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #fff;
+}
+.manga-title a:visited {
+  color: #fff;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="media/css/reset.css" rel="stylesheet" type="text/css"></link>
+<link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css"></link>
+<link href="media/css/style.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>Mangarific</h1>
+    <ul id="navigation" class="list-inline">
+      <li><a href="#search">Search</a></li>
+      <li><a href="#mangas">Mangas</a></li>
+      <li><a href="#settings">Settings</a></li>
+    </ul>
+
+    <section id="search" class="tab active">
+      <form>
+        <input type="text" placeholder="Search manga" />
+      </form>
+      <!-- A search form will be shown here -->
+      <!-- Results will be shown here -->
+      <!-- Results should be from multiple sites -->
+    </section>
+    <section id="mangas" class="tab">
+      <!--
+      Data required to be tracked for each manga are:
+      the source website.
+      the last read chapter
+      the last updated chapter(Read the last item in the chapter list)
+      actual chapter list.
+      -->
+
+      <div class="manga" data-website="http://goodmanga.net" data-manga-prefix="http://goodmanga.net/naruto/chapter/">
+        <p class="manga-title"><a href="http://goodmanga.net">Naruto</a></p>
+        <div class="actions">
+          <i class="fa fa-fast-backward" title="Earliest chapter" aria-hidden="true"></i>
+          <i class="fa fa-backward" title="Previous chapter" aria-hidden="true"></i>
+          <i class="fa fa-play" title="Current chapter" aria-hidden="true"></i>
+          <i class="fa fa-forward" title="Next chapter" aria-hidden="true"></i>
+          <i class="fa fa-fast-forward" title="Latest chapter" aria-hidden="true"></i>
+        </div>
+        <div class="manga-meta">
+          <div class="detail-label">Last Chapter Read</div>
+          <div class="detail-value">234</div>
+          <div class="detail-label">Lastest Chapter</div>
+          <div class="detail-value">457</div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="chapter-nav">
+          <p>Select chapter</p>
+          <select>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <!-- <button class="chapter-nav-button" value="">GO</button> -->
+        </div>
+        <div class="clearfix"></div>
+      </div>
+
+      <!-- If no titles are saved this will be empty -->
+      <!-- Otherwise display list of mangas(the title, latest episode and last read episode, site icon and a chapter navigator) -->
+    </section>
+  </div>
+  <script src="media/js/jquery-3.1.1.slim.min.js"></script>
+  <script src="media/js/lib.js"></script>
+  <script src="media/js/popup.js"></script>
+</body>
+</html>
